@@ -18,7 +18,7 @@ services:
       retries: 5
 
   backend:
-    image: ${BACKEND_IMAGE:-gitea.iu2naf.net:3000/iu2naf/openarpa-backend:latest}
+    image: ${BACKEND_IMAGE:-ghcr.io/iu2naf/openarpa-backend:latest}
     container_name: opa_backend
     restart: unless-stopped
     environment:
@@ -34,7 +34,7 @@ services:
         condition: service_healthy
 
   frontend:
-    image: ${FRONTEND_IMAGE:-gitea.iu2naf.net:3000/iu2naf/openarpa-frontend:latest}
+    image: ${FRONTEND_IMAGE:-ghcr.io/iu2naf/openarpa-frontend:latest}
     container_name: opa_frontend
     restart: unless-stopped
     ports:
