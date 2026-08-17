@@ -7,7 +7,7 @@ Questo pacchetto contiene tutto il necessario per eseguire l'applicazione in amb
 ## Struttura del Pacchetto di Produzione
 
 ```
-Production/
+OpenArpa/
 ├── docker-compose.yml   # Definizione dello stack di microservizi (PostGIS, Backend, Frontend, Nginx)
 ├── nginx.conf           # Configurazione Reverse Proxy ottimizzata
 ├── .env.example         # Modello per le variabili d'ambiente
@@ -25,8 +25,8 @@ Production/
 
 ## Istruzioni di Deploy Rapido (3 Passaggi)
 
-### 1. Copia i file sul server
-Copia l'intera cartella `Production/` nella directory di destinazione sul server (es. `/opt/openarpa` o `~/openarpa`).
+### 1. Clona i file sul server
+Clona l'intera cartella `OpenArpa/` nella directory di destinazione sul server (es. `/opt/openarpa` o `~/openarpa`).
 
 ### 2. Configura le variabili d'ambiente
 Crea il file `.env` a partire dal modello:
